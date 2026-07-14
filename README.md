@@ -85,7 +85,7 @@ src/
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/TU-USUARIO/mediconnect-web.git
+git clone https://github.com/Adrian-hub-cell/mediconnect-web.git
 ```
 
 Entrar al proyecto:
