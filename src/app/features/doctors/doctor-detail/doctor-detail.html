@@ -1,0 +1,99 @@
+<div class="detail-container">
+
+  @if (doctor()) {
+
+    <div class="doctor-profile">
+
+      <div class="profile-image">
+        <span>👨‍⚕️</span>
+      </div>
+
+
+      <h1>{{ doctor()?.name }}</h1>
+
+      <h2>{{ doctor()?.role }}</h2>
+
+
+      <div class="information">
+
+        <p>
+          <strong>Especialidad:</strong>
+          {{ doctor()?.specialty }}
+        </p>
+
+
+        <p>
+          <strong>Área:</strong>
+          {{ doctor()?.area }}
+        </p>
+
+
+        <p>
+          <strong>Experiencia:</strong>
+          {{ doctor()?.experience }} años
+        </p>
+
+
+        <p>
+          <strong>Consultorio:</strong>
+          {{ doctor()?.office }}
+        </p>
+
+
+        <p>
+          <strong>Horario:</strong>
+          {{ doctor()?.schedule }}
+        </p>
+
+      </div>
+
+
+      <div class="description">
+
+        <h3>Sobre el profesional</h3>
+
+        <p>
+          {{ doctor()?.description }}
+        </p>
+
+      </div>
+
+
+      <div class="actions">
+
+        <button 
+          class="back"
+          (click)="goBack()">
+          Volver
+        </button>
+
+
+        <button 
+          class="appointment"
+          (click)="scheduleAppointment()">
+          Agendar cita
+        </button>
+
+      </div>
+
+
+    </div>
+
+
+  } @else {
+
+    <div class="not-found">
+
+      <h2>
+        Profesional no encontrado
+      </h2>
+
+      <button (click)="goBack()">
+        Regresar
+      </button>
+
+    </div>
+
+  }
+
+</div>

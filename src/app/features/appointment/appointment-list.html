@@ -1,0 +1,65 @@
+<div class="appointment-container">
+
+  <h1>Citas Médicas</h1>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Buscar por paciente, profesional, especialidad o estado..."
+      [value]="searchInput()"
+      (input)="searchInput.set($any($event.target).value)"
+    />
+  </div>
+
+  <div class="appointment-grid">
+
+    @for (appointment of filteredAppointments(); track appointment.id) {
+
+      <div class="appointment-card">
+
+        <div class="appointment-icon">
+          📅
+        </div>
+
+        <div class="appointment-info">
+
+          <h2>{{ appointment.patient }}</h2>
+
+          <p>
+            <strong>Profesional:</strong>
+            {{ appointment.professional }}
+          </p>
+
+          <p>
+            <strong>Especialidad:</strong>
+            {{ appointment.specialty }}
+          </p>
+
+          <p>
+            <strong>Fecha:</strong>
+            {{ appointment.date }}
+          </p>
+
+          <p>
+            <strong>Hora:</strong>
+            {{ appointment.time }}
+          </p>
+
+          <p>
+            <strong>Estado:</strong>
+            {{ appointment.status }}
+          </p>
+
+          <button>
+            Ver detalles
+          </button>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

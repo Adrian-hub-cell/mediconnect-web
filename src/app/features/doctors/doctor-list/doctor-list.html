@@ -1,0 +1,66 @@
+<div class="doctor-container">
+
+  <h1>Personal Médico</h1>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Buscar médico, especialidad o área..."
+      [value]="searchInput()"
+      (input)="searchInput.set($any($event.target).value)"
+    />
+  </div>
+
+
+  <div class="doctor-grid">
+
+    @for (doctor of filteredDoctors(); track doctor.id) {
+
+      <div class="doctor-card">
+
+        <div class="doctor-image">
+          <span>👨‍⚕️</span>
+        </div>
+
+
+        <div class="doctor-info">
+
+          <h2>{{ doctor.name }}</h2>
+
+          <p class="role">
+            {{ doctor.role }}
+          </p>
+
+
+          <p>
+            <strong>Especialidad:</strong>
+            {{ doctor.specialty }}
+          </p>
+
+
+          <p>
+            <strong>Área:</strong>
+            {{ doctor.area }}
+          </p>
+
+
+          <p>
+            <strong>Experiencia:</strong>
+            {{ doctor.experience }} años
+          </p>
+
+
+          <button (click)="goToDetail(doctor.id)">
+            Ver perfil
+          </button>
+
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

@@ -1,0 +1,70 @@
+<div class="patient-container">
+
+  <h1>Pacientes</h1>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Buscar paciente por nombre, documento o EPS..."
+      [value]="searchInput()"
+      (input)="searchInput.set($any($event.target).value)"
+    />
+  </div>
+
+  <div class="patient-grid">
+
+    @for (patient of filteredPatients(); track patient.id) {
+
+      <div class="patient-card">
+
+        <div class="patient-avatar">
+          👤
+        </div>
+
+        <div class="patient-info">
+
+          <h2>{{ patient.name }}</h2>
+
+          <p>
+            <strong>Edad:</strong>
+            {{ patient.age }} años
+          </p>
+
+          <p>
+            <strong>Documento:</strong>
+            {{ patient.document }}
+          </p>
+
+          <p>
+            <strong>EPS:</strong>
+            {{ patient.eps }}
+          </p>
+
+          <p>
+            <strong>Teléfono:</strong>
+            {{ patient.phone }}
+          </p>
+
+          <p>
+            <strong>Tipo de sangre:</strong>
+            {{ patient.bloodType }}
+          </p>
+
+          <p>
+            <strong>Condición:</strong>
+            {{ patient.condition }}
+          </p>
+
+          <button>
+            Ver historial
+          </button>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

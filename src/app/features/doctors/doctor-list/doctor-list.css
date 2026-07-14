@@ -1,0 +1,134 @@
+.doctor-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 30px;
+    background: #f4f8fb;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.doctor-container h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #1d4e89;
+    margin-bottom: 30px;
+}
+
+/* Buscador */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 900px;
+    padding: 18px 24px;
+    border-radius: 50px;
+    border: 2px solid #d6e4ff;
+    font-size: 18px;
+    outline: none;
+    transition: .3s;
+    background: white;
+}
+
+.search-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 12px rgba(37,99,235,.15);
+}
+
+/* Tarjetas */
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.doctor-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.doctor-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.doctor-image span {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #dbeafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.doctor-info h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.role {
+    text-align: center;
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.doctor-info p {
+    margin: 8px 0;
+    color: #475569;
+}
+
+.doctor-info strong {
+    color: #1e293b;
+}
+
+.doctor-info button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.doctor-info button:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width:768px){
+
+    .doctor-container{
+        padding:20px;
+    }
+
+    .doctor-container h1{
+        font-size:32px;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+}

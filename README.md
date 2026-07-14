@@ -1,59 +1,155 @@
-# MediconnectWeb
+# 🏥 mediconnect-web
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+## 📋 Descripción
 
-## Development server
+mediconnect-web es una aplicación desarrollada en Angular que permite visualizar el personal médico de una clínica u hospital, consultar la información de cada profesional y navegar entre diferentes vistas mediante rutas dinámicas.
 
-To start a local development server, run:
+Este proyecto fue desarrollado como parte del **Módulo 7**, enfocado en el desarrollo de aplicaciones web con Angular.
+
+---
+
+# ✨ Funcionalidades
+
+- Visualización del personal médico.
+- Tarjetas informativas para cada profesional.
+- Consulta del perfil de cada médico.
+- Navegación mediante Angular Router.
+- Buscador de profesionales por nombre o especialidad.
+- Diseño moderno y adaptable.
+- Componentes reutilizables.
+
+---
+
+# 👨‍⚕️ Personal Médico
+
+El sistema incluye profesionales de diferentes áreas de la salud, entre ellas:
+
+- Cardiología
+- Neurología
+- Pediatría
+- Enfermería
+- Cirugía
+- Radiología
+- Medicina General
+- Dermatología
+- Ginecología
+- Traumatología
+- Oftalmología
+- Oncología
+- Medicina Interna
+- Urología
+- Endocrinología
+
+---
+
+# 🛠 Tecnologías utilizadas
+
+- Angular 21
+- TypeScript
+- HTML5
+- CSS3
+- Angular Router
+- Signals
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+# 📁 Estructura del proyecto
+
+```
+src/
+│
+├── app/
+│   ├── features/
+│   │   ├── doctors/
+│   │   └── register/
+│   │
+│   ├── shared/
+│   │   ├── doctor-card/
+│   │   └── header/
+│   │
+│   ├── app.routes.ts
+│   ├── app.ts
+│   └── app.config.ts
+│
+├── styles.css
+└── main.ts
+```
+
+---
+
+# 🚀 Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/TU-USUARIO/mediconnect-web.git
+```
+
+Entrar al proyecto:
+
+```bash
+cd mediconnect-web
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar la aplicación:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abrir el navegador en:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+# 📌 Estado del proyecto
 
-## Building
+✅ Módulo 7 Finalizado
 
-To build the project run:
+Implementado:
 
-```bash
-ng build
-```
+- Componentes
+- Rutas
+- Navegación
+- Personal médico
+- Vista de detalles
+- Buscador
+- Diseño responsive
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+# 🔮 Mejoras futuras
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Registro de médicos.
+- Registro de pacientes.
+- Gestión de citas médicas.
+- Inicio de sesión.
+- Consumo de API REST con Spring Boot.
+- Base de datos PostgreSQL.
+- Panel administrativo.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+# 👨‍💻 Autor
 
-For end-to-end (e2e) testing, run:
+**Adrián González Sánchez**
 
-```bash
-ng e2e
-```
+Proyecto académico desarrollado con Angular como parte del sistema **MediConnect**.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+# 📄 Licencia
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este proyecto fue desarrollado con fines académicos y educativos.

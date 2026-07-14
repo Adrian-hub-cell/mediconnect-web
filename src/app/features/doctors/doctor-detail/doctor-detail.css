@@ -1,0 +1,165 @@
+.detail-container {
+  min-height: 100vh;
+  background: #f4f8fb;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.doctor-profile {
+  background: white;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+/* Imagen */
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.profile-image span {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #dbeafe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+
+/* Títulos */
+
+.doctor-profile h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+
+.doctor-profile h2 {
+  text-align: center;
+  color: #2563eb;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+/* Información */
+
+.information {
+  background: #f8fafc;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+
+.information p {
+  margin: 12px 0;
+  color: #475569;
+}
+
+
+.information strong {
+  color: #1e293b;
+}
+
+
+/* Descripción */
+
+.description {
+  margin-top: 25px;
+}
+
+
+.description h3 {
+  color: #1e293b;
+}
+
+
+.description p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+
+/* Botones */
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+
+.actions button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+.back {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+
+.back:hover {
+  background: #cbd5e1;
+}
+
+
+.appointment {
+  background: #2563eb;
+  color: white;
+}
+
+
+.appointment:hover {
+  background: #1d4ed8;
+}
+
+
+/* No encontrado */
+
+.not-found {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.not-found button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+  .actions {
+    flex-direction: column;
+  }
+
+}
